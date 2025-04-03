@@ -33,9 +33,7 @@ cd NextCloud
 🧾 2. Review & Edit the Script
 Open the script:
 
-bash
-Copy
-Edit
+
 nano setup-nextcloud.sh
 Replace any placeholders:
 
@@ -50,9 +48,7 @@ Update passwords if desired
 ▶️ 3. Run the Script
 Make it executable and run:
 
-bash
-Copy
-Edit
+
 chmod +x setup-nextcloud.sh
 ./setup-nextcloud.sh
 This will:
@@ -73,9 +69,7 @@ External HTTPS: https://your-subdomain.duckdns.org
 🔁 Renewing SSL Certs
 The script adds a cron job to auto-renew your Let's Encrypt certificate:
 
-bash
-Copy
-Edit
+
 0 3 * * * /usr/local/bin/certbot renew --quiet && systemctl reload nginx
 💡 Tips
 🚨 Always double-check config/config.php and add your DuckDNS domain to trusted_domains
